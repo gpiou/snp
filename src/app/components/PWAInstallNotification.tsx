@@ -17,6 +17,8 @@ export default function PWAInstallNotification() {
   useEffect(() => {
     // Check if app is already installed
     const checkInstalled = () => {
+      if (typeof window === 'undefined') return false;
+      
       const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
       const isInWebAppiOS = (window.navigator as any).standalone === true;
       return isStandalone || isInWebAppiOS;
@@ -24,6 +26,8 @@ export default function PWAInstallNotification() {
 
     // Check if notification was dismissed recently
     const checkDismissed = () => {
+      if (typeof window === 'undefined') return false;
+      
       const dismissed = localStorage.getItem('pwa-notification-dismissed');
       if (dismissed) {
         const dismissedTime = parseInt(dismissed);
@@ -35,7 +39,7 @@ export default function PWAInstallNotification() {
     };
 
     // Check if user has seen notification before
-    const hasSeenNotification = localStorage.getItem('pwa-notification-seen') === 'true';
+    const hasSeenNotification = typeof window !== 'undefined' && localStorage.getItem('pwa-notification-seen') === 'true';
 
     if (checkInstalled()) {
       setIsInstalled(true);
