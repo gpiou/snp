@@ -52,7 +52,7 @@ export default function PWARedirectPage() {
         <div className="space-y-4">
           <a
             href="https://fsmvid.com"
-            className="inline-block bg-white text-blue-900 px-8 py-3 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            className="inline-block bg-white text-blue-900 px-8 py-3 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:translate-y-[-4px]"
           >
             Ir a FSMVid.com
           </a>
