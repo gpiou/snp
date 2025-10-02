@@ -1,10 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // PWA Configuration
-  experimental: {
-    webpackBuildWorker: true,
-  },
-  
   // Optimize for PWA
   compress: true,
   poweredByHeader: false,
