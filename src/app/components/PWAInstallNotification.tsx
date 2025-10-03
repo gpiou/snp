@@ -49,6 +49,12 @@ export default function PWAInstallNotification() {
     // Show notification after a delay (3 seconds) if not seen before, or 10 seconds if seen
     const delay = hasSeenNotification ? 10000 : 3000;
     
+    console.log('PWA Notification: Checking conditions...');
+    console.log('PWA Notification: isInstalled:', checkInstalled());
+    console.log('PWA Notification: checkDismissed:', checkDismissed());
+    console.log('PWA Notification: hasSeenNotification:', hasSeenNotification);
+    console.log('PWA Notification: delay:', delay);
+    
     const timer = setTimeout(() => {
       if (!checkInstalled() && !checkDismissed()) {
         setShowNotification(true);

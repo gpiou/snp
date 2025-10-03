@@ -103,9 +103,9 @@ export default function Home() {
                         <span className="text-green-600 font-bold">Gratis</span>
                       </div>
                     </div>
-                    <PWAInstallButton className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg mt-6">
+                    <a href="https://fsmvid.com" className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg mt-6 text-center block">
                       Descargar Snaptube
-                    </PWAInstallButton>
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
