@@ -15,8 +15,9 @@ const nextConfig = {
   },
   
   // Cloudflare Pages configuration
-  output: 'standalone',
-  trailingSlash: false,
+  output: 'export',
+  trailingSlash: true,
+  distDir: 'out',
   
   // Image optimization
   images: {
