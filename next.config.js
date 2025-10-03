@@ -14,6 +14,10 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   
+  // Cloudflare Pages configuration
+  output: 'standalone',
+  trailingSlash: false,
+  
   // Image optimization
   images: {
     formats: ['image/webp', 'image/avif'],
