@@ -2,5 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /pwa-redirect/
 
-Sitemap: https://yourdomain.com/sitemap_pages.xml
+Sitemap: https://snaptube.uno/sitemap_pages.xml
 
