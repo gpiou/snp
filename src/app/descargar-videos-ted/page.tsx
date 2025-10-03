@@ -317,8 +317,8 @@ export default function DescargarTEDPage() {
                 </p>
               </div>
 
-              <div>
-                <h3 className="bg-white text-lg font-semibold text-gray-900 mb-3">🎯 Alternativa oficial</h3>
+              <div className="bg-white rounded-lg shadow-lg p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">🎯 Alternativa oficial</h3>
                 <p className="text-gray-700">
                   También puedes usar la app oficial de <a href="https://ted.com" className="text-red-600 hover:text-red-800 font-medium">TED</a> para guardar charlas 
                   en tu lista personal, aunque esto requiere conexión para verlas.

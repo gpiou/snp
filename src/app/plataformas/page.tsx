@@ -384,7 +384,7 @@ export default function PlataformasPage() {
               <Link
                 key={platform.name}
                 href={platform.url}
-                className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-blue-200 transform hover:translate-y-[-8px]"
+                className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-blue-200 transform hover:-translate-y-2"
               >
                 <div className="p-6">
                   <div className="flex items-center mb-4">
@@ -450,7 +450,7 @@ export default function PlataformasPage() {
             Descarga Snaptube ahora y comienza a guardar contenido de todas estas plataformas en tu dispositivo.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <PWAInstallButton className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-blue-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transform hover:translate-y-[-4px]">
+            <PWAInstallButton className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-blue-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
               Descargar Snaptube Gratis
             </PWAInstallButton>
             <Link
