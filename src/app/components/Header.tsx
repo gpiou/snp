@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from 'react';
-import PWAInstallNotification from "./PWAInstallNotification";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -219,9 +218,6 @@ export default function Header() {
           </div>
         )}
       </div>
-      
-      {/* PWA Install Notification */}
-      <PWAInstallNotification />
     </header>
   );
 }

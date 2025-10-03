@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import PWAInstallButton from "./PWAInstallButton";
+import PWAInstallNotification from "./PWAInstallNotification";
 
 export default function Footer() {
   return (
@@ -61,6 +62,9 @@ export default function Footer() {
           </p>
         </div>
       </div>
+      
+      {/* PWA Install Notification - Professional Design */}
+      <PWAInstallNotification />
     </footer>
   );
 }

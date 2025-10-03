@@ -167,47 +167,70 @@ export default function PWAInstallNotification() {
   }
 
   return (
-    <div className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}>
-      <div className="bg-blue-600 text-white shadow-lg">
-        <div className="container mx-auto px-4 py-3">
+    <div className={`fixed bottom-0 left-0 right-0 z-50 transition-all duration-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}>
+      <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-indigo-900 text-white shadow-2xl border-t border-blue-700/30 backdrop-blur-sm">
+        <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              {/* App Icon */}
-              <Image
-                src="/snaplogo.png"
-                alt="Snaptube"
-                width={32}
-                height={32}
-                className="rounded-lg shadow-sm"
-              />
+            <div className="flex items-center space-x-4">
+              {/* App Icon with Glow Effect */}
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-xl blur opacity-75"></div>
+                <Image
+                  src="/snaplogo.png"
+                  alt="Snaptube"
+                  width={40}
+                  height={40}
+                  className="relative rounded-xl shadow-lg"
+                />
+              </div>
               
               {/* Content */}
               <div className="flex-1">
-                <div className="flex items-center space-x-2">
-                  <h3 className="font-semibold text-sm">Instalar Snaptube</h3>
-                  <div className="hidden sm:flex items-center space-x-3 text-xs text-blue-100">
-                    <span>⚡ Más rápido</span>
-                    <span>📱 Offline</span>
+                <div className="flex flex-col sm:flex-row sm:items-center space-y-1 sm:space-y-0 sm:space-x-4">
+                  <div>
+                    <h3 className="font-bold text-lg text-white">¡Instala Snaptube!</h3>
+                    <p className="text-blue-100 text-sm">Acceso rápido y descargas offline</p>
+                  </div>
+                  <div className="flex items-center space-x-4 text-xs text-blue-200">
+                    <span className="flex items-center space-x-1">
+                      <span className="w-2 h-2 bg-green-400 rounded-full"></span>
+                      <span>100% Gratis</span>
+                    </span>
+                    <span className="flex items-center space-x-1">
+                      <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>
+                      <span>Sin Anuncios</span>
+                    </span>
+                    <span className="flex items-center space-x-1">
+                      <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
+                      <span>Offline</span>
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Action Buttons */}
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-3">
               <button
                 onClick={handleInstallClick}
-                className="bg-white text-blue-600 px-4 py-1.5 rounded-md text-sm font-medium hover:bg-blue-50 transition-colors"
+                className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-black font-bold px-6 py-3 rounded-xl text-sm transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
-                Instalar
+                📱 Instalar App
+              </button>
+              
+              <button
+                onClick={handleLater}
+                className="text-blue-200 hover:text-white px-3 py-2 rounded-lg text-sm font-medium transition-colors hover:bg-white/10"
+              >
+                Más tarde
               </button>
               
               <button
                 onClick={handleDismiss}
-                className="text-blue-200 hover:text-white p-1 transition-colors"
+                className="text-blue-300 hover:text-white p-2 rounded-lg transition-colors hover:bg-white/10"
                 aria-label="Cerrar"
               >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
