@@ -4,7 +4,6 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import PWAInstaller from "./components/PWAInstaller";
-import PWAInstallNotification from "./components/PWAInstallNotification";
 import NoSSR from "./components/NoSSR";
 
 const geistSans = Geist({
@@ -63,9 +62,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning={true}
       >
-        <NoSSR>
-          <PWAInstallNotification />
-        </NoSSR>
         <Header />
         <main>{children}</main>
         <Footer />
