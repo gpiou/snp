@@ -71,46 +71,10 @@
   ],
   "shortcuts": [
     {
-      "name": "YouTube Downloader",
-      "short_name": "YouTube",
-      "description": "Descargar videos de YouTube",
-      "url": "https://fsmvid.com/youtube-media-grabber",
-      "icons": [
-        {
-          "src": "/icons/youtube-shortcut.png",
-          "sizes": "96x96"
-        }
-      ]
-    },
-    {
-      "name": "TikTok Downloader",
-      "short_name": "TikTok",
-      "description": "Descargar videos de TikTok",
-      "url": "https://fsmvid.com/tiktok-media-grabber",
-      "icons": [
-        {
-          "src": "/icons/tiktok-shortcut.png",
-          "sizes": "96x96"
-        }
-      ]
-    },
-    {
-      "name": "Instagram Downloader",
-      "short_name": "Instagram",
-      "description": "Descargar videos de Instagram",
-      "url": "https://fsmvid.com/instagram-media-grabber",
-      "icons": [
-        {
-          "src": "/icons/instagram-shortcut.png",
-          "sizes": "96x96"
-        }
-      ]
-    },
-    {
-      "name": "Facebook Downloader",
-      "short_name": "Facebook",
-      "description": "Descargar videos de Facebook",
-      "url": "https://fsmvid.com/facebook-media-grabber",
+      "name": "Plataformas",
+      "short_name": "Plataformas",
+      "description": "Ver todas las plataformas",
+      "url": "/plataformas",
       "icons": [
         {
           "src": "/icons/platforms-shortcut.png",
