@@ -62,9 +62,9 @@
   ],
   "screenshots": [
     {
-      "src": "/screenshots/mobile-screenshot.svg",
+      "src": "/screenshots/mobile-screenshot.png",
       "sizes": "375x667",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "form_factor": "narrow",
       "label": "Vista móvil de Snaptube"
     }
